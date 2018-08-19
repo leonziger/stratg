@@ -1,0 +1,28 @@
+@import '../../../../node_modules/vex-js/sass/vex.sass';
+
+
+.vex{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 20px;
+  overflow: auto;
+
+  &-content{
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: none;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 1300px) {
+      width: auto;
+      margin-left: 0;
+    }
+  }
+
+  &-overlay{
+    background: rgba(0,0,0,0.8);
+  }
+}
