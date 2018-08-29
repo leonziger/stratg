@@ -8,9 +8,10 @@
   border-radius: 30px;
   background-image: linear-gradient(to top, #a72122 0%, #da282a 100%);
   text-decoration: none;
+  transition: $delay;
 
   &:hover {
-    background-image: linear-gradient(to top, #a72122 0%, #da282a 10%);
+    opacity: .7;
   }
 
   &__icon{

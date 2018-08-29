@@ -65,8 +65,19 @@
   }
 
   &__nav {
+    display: flex;
     margin-top: 11px;
     margin-left: 65px;
+
+    @media(max-width: 1200px) {
+      display: none;
+    }
+
+    &_mobile {
+      @media(min-width: 1200px) {
+        display: none;
+      }
+    }
   }
 
   &__contact-group {
@@ -82,8 +93,15 @@
       height: 17px;
       opacity: 0.15;
       background: $white;
+
+      @media(max-width: 1200px) {
+        display: none;
+      }
     }
   }
 
-
+  &__menu-toggle {
+    display: flex;
+    align-items: center;
+  }
 }
