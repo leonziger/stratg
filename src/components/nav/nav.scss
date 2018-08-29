@@ -47,6 +47,7 @@
     }
 
     &.is-open{
+      display: flex;
       transform: translateX(0);
       z-index: 25;
       top: 0;
