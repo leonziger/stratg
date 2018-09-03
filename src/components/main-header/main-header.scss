@@ -68,9 +68,28 @@
     display: flex;
     margin-top: 11px;
     margin-left: 65px;
+    background: #5a6468;
+    transition: $delay;
+
+    &.is-open{
+      display: flex;
+      transform: translateX(0);
+      z-index: 25;
+
+      .nav {
+        width: 100%;
+      }
+    }
 
     @media(max-width: 1200px) {
-      display: none;
+      position: fixed;
+      transform: translateX(100%);
+      width: 100%;
+      max-width: 320px;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      padding-top: 100px;
     }
   }
 
