@@ -68,11 +68,11 @@
     display: flex;
     margin-top: 11px;
     margin-left: 65px;
-    background: #5a6468;
     transition: $delay;
 
     &.is-open{
       display: flex;
+      background: #5a6468;
       transform: translateX(0);
       z-index: 25;
 
