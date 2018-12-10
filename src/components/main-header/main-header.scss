@@ -1,5 +1,5 @@
 .main-header {
-  max-width: 1836px;
+  //max-width: 1836px;
   padding-bottom: 37px;
   border-bottom: 1px solid rgba($white, 0.1);
 
@@ -114,7 +114,6 @@
   }
 
   &__menu-toggle {
-    display: flex;
-    align-items: center;
+
   }
 }
