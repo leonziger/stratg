@@ -13,9 +13,10 @@
 }
 
 ::placeholder {
-  font-size: 16px;
-  color: #23292e;
-  letter-spacing: 0.32px;
+  color: #a0a6b0;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 35.45px;
 
   @media(max-width: 375px){
     font-size: 14px;

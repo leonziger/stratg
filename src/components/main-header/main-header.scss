@@ -3,6 +3,11 @@
   padding-bottom: 37px;
   border-bottom: 1px solid rgba($white, 0.1);
 
+  &_sticky {
+    background: transparent;
+    min-height: 48px;
+  }
+
   &__container {
     padding-top: 24px;
     display: flex;
@@ -13,23 +18,21 @@
   &__logo {
     display: flex;
     align-items: center;
+    max-width: 275px;
+    width: 100%;
+    flex-shrink: 0;
+    padding-right: 20px;
+
+    @media(max-width: 1200px) {
+      width: auto;
+    }
+
+    @media(max-width: 992px) {
+      padding-right: 0;
+    }
 
     @media (max-width: 768px){
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    &-link{
-    }
-
-    &-icon{
-      @media (max-width: 768px){
-        max-width: 115px;
-      }
-
-      @media (max-width: 630px){
-        max-width: 105px;
-      }
+      display: none;
     }
 
     &-title {
@@ -62,13 +65,22 @@
         }
       }
     }
+
+    &_mobi {
+      display: none;
+
+      @media(max-width: 768px) {
+        display: block;
+      }
+    }
   }
 
   &__nav {
     display: flex;
     margin-top: 11px;
-    margin-left: 65px;
     transition: $delay;
+    width: 100%;
+    max-width: 600px;
 
     &.is-open{
       display: flex;
@@ -81,7 +93,7 @@
       }
     }
 
-    @media(max-width: 1200px) {
+    @media(max-width: 992px) {
       position: fixed;
       transform: translateX(100%);
       width: 100%;
@@ -90,6 +102,8 @@
       right: 0;
       bottom: 0;
       padding-top: 100px;
+      margin-top: 0;
+      opacity: 0.8;
     }
   }
 
@@ -97,6 +111,12 @@
     display: flex;
     align-items: center;
     margin-top: 12px;
+    flex-shrink: 0;
+    padding-left: 15px;
+
+    @media(max-width: 992px) {
+      padding-left: 0;
+    }
 
     &:before {
       display: inline-flex;
@@ -114,6 +134,10 @@
   }
 
   &__menu-toggle {
+    display: none;
 
+    @media(max-width: 992px) {
+      display: block;
+    }
   }
 }

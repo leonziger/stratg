@@ -1,8 +1,5 @@
 .main-banner{
-  //min-height: 100vh;
+  min-height: 100vh;
   color: $white;
-  background-image: url('./../images/main-head.jpg');
-  background-position: top center;
-  width: 1920px;
-  height: 971px;
+  background: url('./../images/main-head.jpg') top center  no-repeat;
 }

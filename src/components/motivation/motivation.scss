@@ -1,0 +1,65 @@
+.motivation {
+  padding-top: 160px;
+  padding-bottom: 121px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 389px;
+    height: 552px;
+    background-color: #e4292b;
+    opacity: 0.81;
+    padding: 41px 34px 34px;
+  }
+
+  &__form-title {
+    color: #fff;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 49.77px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 4px;
+  }
+
+  &__form-description {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+    padding-bottom: 19px;
+  }
+
+  &__form-field {
+    width: 321px;
+    height: 67px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 9px;
+  }
+
+  &__form-submit {
+    width: 321px;
+    height: 67px;
+    background-color: #012969;
+    background-image: none;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 38px;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__ccntent {
+    display: flex;
+  }
+}
