@@ -1,12 +1,7 @@
 section.motivation
   .container.motivation__container
-    form.motivation__form
-      .motivation__form-title  Get started
-      p.motivation__form-description The test below will allow us to determine to which "pole" for each dichotomy
-      input.motivation__form-field(name='name' placeholder='Your Name' autocomplete='off' required)
-      input.motivation__form-field(name='phone' placeholder='Your Phone' autocomplete='off' required)
-      input.motivation__form-field(name='company' placeholder='Company' autocomplete='off' required)
-      button.button.motivation__form-submit Send details
+    .motivation__form
+      include ../contact-form/contact-form
     .motivation__content
       h1.motivation__slogan
         span.motivation__slogan-begin The Harvard

@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import vex from 'vex-js';
-import phone from '../form/phone';
+// import phone from '../form/phone';
 
 
 $('.main-header__contacts-button').click(function (e) {
