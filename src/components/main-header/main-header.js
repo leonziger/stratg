@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import vex from 'vex-js';
+// import vex from 'vex-js';
 // import phone from '../form/phone';
 
 

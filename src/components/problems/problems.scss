@@ -1,0 +1,94 @@
+.problems {
+  background-color: #f3f5fa;
+  padding-top: 122px;
+  padding-bottom: 84px;
+
+  @media(max-width: 480px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media(max-width: 1140px) {
+      justify-content: center;
+    }
+  }
+
+
+  &__image,
+  &__content {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &__image {
+    max-width: 100%;
+    padding-right: 10px;
+
+    @media (max-width: 1140px) {
+      display: block;
+      padding-left: 10px;
+    }
+
+    @media(max-width: 480px) {
+      padding-bottom: 0;
+    }
+  }
+
+  &__content {
+    padding-left: 10px;
+    width: 100%;
+    max-width: 540px;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+
+    @media(max-width: 1140px) {
+      width: auto;
+      align-items: flex-start;
+      padding-right: 10px;
+    }
+  }
+
+  &__title {
+    color: #012969;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 34px;
+    padding-bottom: 37px;
+
+    @media(max-width: 1140px) {
+      align-self: center;
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    color: #000;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 30px;
+    padding-bottom: 16px;
+
+    @media(max-width: 1140px) {
+      text-align: left;
+      padding-left: 0;
+    }
+  }
+
+  &__description {
+    color: #000;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 30px;
+
+    @media(max-width: 1140px) {
+      text-align: left;
+    }
+  }
+}
