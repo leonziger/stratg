@@ -1,0 +1,45 @@
+.teach {
+  padding-top: 84px;
+  padding-bottom: 46px;
+  color: $white;
+  background: url('./../images/teach.png') top center  no-repeat;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 673px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    padding-bottom: 45px;
+
+    &_highlighted {
+      color: #d8282a;
+      font-size: 36px;
+    }
+  }
+
+  &__description {
+    display: flex;
+    width: 100%;
+    max-width: 677px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
