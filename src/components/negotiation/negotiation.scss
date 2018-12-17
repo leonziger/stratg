@@ -1,0 +1,39 @@
+.negotiation {
+  display: flex;
+  justify-content: space-between;
+
+  &__info {
+    display: inline-flex;
+    width: 50%;
+  }
+
+  &__image {
+    display: flex;
+    width: 50%;
+    height: 690px;
+    background: url('./../images/negotiation_1.png') top center  no-repeat;
+  }
+
+  &__content {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+  }
+
+  &__title {
+    display: flex;
+    color: #0a2e6c;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 29.65px;
+  }
+
+  &__description {
+    display: flex;
+    color: #000000;
+    font-family: "Proxima Nova";
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 30px;
+  }
+}
