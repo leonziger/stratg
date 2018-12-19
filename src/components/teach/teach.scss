@@ -1,8 +1,13 @@
 .teach {
-  padding-top: 84px;
+  padding-top: 40px;
   padding-bottom: 46px;
   color: $white;
   background: url('./../images/teach.png') top center  no-repeat;
+
+  @media(max-width: 992px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
   &__container {
     display: flex;
@@ -21,7 +26,19 @@
     font-size: 28px;
     font-weight: 700;
     line-height: 34px;
+    padding-top: 44px;
     padding-bottom: 45px;
+    text-align: center;
+
+    @media(max-width: 992px)  {
+      padding-bottom: 25px;
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    @media(max-width: 576px) {
+      line-height: 26px;
+    }
 
     &_highlighted {
       color: #d8282a;
@@ -41,5 +58,14 @@
     line-height: 30px;
     text-align: center;
     padding-bottom: 30px;
+
+    @media(max-width: 992px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    @media(max-width: 576px) {
+      line-height: 19px;
+    }
   }
 }
