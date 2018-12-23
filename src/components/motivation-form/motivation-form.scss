@@ -1,5 +1,33 @@
-.motivation__contact-form {
+.motivation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(#e4292b, 0.81);
+  padding: 41px 34px 34px;
 
+  @media(max-width: 375px) {
+    padding: 41px 20px 34px;
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 49.77px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 4px;
+  }
+
+  &__description {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+    padding-bottom: 19px;
+  }
 
   &__field {
     max-width: 321px;
