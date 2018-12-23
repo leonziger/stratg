@@ -36,6 +36,7 @@
       flex-direction: column;
       flex-wrap: wrap;
       min-height: 100%;
+      margin-bottom: 15px;
     }
 
     &:nth-child(2n) {
@@ -43,7 +44,6 @@
         flex-direction: row-reverse;
       }
       @media(max-width: 768px) {
-        margin-top: 15px;
         flex-direction: row;
       }
     }
