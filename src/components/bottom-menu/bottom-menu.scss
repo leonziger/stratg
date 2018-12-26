@@ -1,0 +1,25 @@
+.bottom-menu {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+
+
+  &__title {
+    color: #2d3b3e;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 29.02px;
+    padding-bottom: 62px;
+  }
+
+  &__list {
+    padding-left: 4px;
+  }
+
+  &__item {
+    color: #8fa3aa;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 29.06px;
+  }
+}
