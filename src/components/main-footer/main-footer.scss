@@ -5,6 +5,11 @@
     max-width: 1600px;
     display: flex;
     justify-content: space-between;
+
+    @media(max-width: 1450px) {
+      flex-direction: column-reverse;
+      max-width: 1170px;
+    }
   }
 
   &__contacts {
@@ -12,6 +17,13 @@
     flex-direction: column;
     max-width: 335px;
     padding-left: 24px;
+
+    @media(max-width: 1450px) {
+      justify-content: space-between;
+      flex-direction: row;
+      max-width: 100%;
+      padding-left: 0;
+    }
 
     &-title {
       color: #2d3b3e;
@@ -34,6 +46,10 @@
     display: flex;
     width: 1200px;
     padding-bottom: 50px;
+
+    @media(max-width: 1200px) {
+      width: auto;
+    }
   }
 
   &__copyright {
