@@ -1,5 +1,9 @@
 .main-footer {
-  padding-top: 61px;
+  padding-top: 56px;
+
+  @media(max-width: 1200px) {
+    padding-top: 16px;
+  }
 
   &__container {
     max-width: 1600px;
@@ -13,9 +17,11 @@
   }
 
   &__logo {
-    display: flex;
 
     &_bottom {
+      display: flex;
+      padding-top: 5px;
+      padding-bottom: 5px;
 
       @media(max-width: 576px) {
         display: none;
@@ -54,9 +60,11 @@
 
     &-list {
       display: flex;
-      flex-direction: column;
+      padding-left: 0;
+      padding-right: 0;
 
       @media(max-width: 1450px) {
+        flex-direction: column;
         padding: 20px;
       }
     }
@@ -64,32 +72,51 @@
     &-title {
       color: #2d3b3e;
       font-size: 23px;
-      font-weight: 400;
+      font-weight: 700;
       line-height: 29.02px;
+      padding-top: 58px;
+      padding-bottom: 31px;
+
+      &:after {
+        display: block;
+        content: '';
+        margin-top: 31px;
+        background-color: gray;
+        width: 64px;
+        height: 1px;
+        opacity: 0.2;
+      }
 
       @media(max-width: 1450px) {
         display: none;
       }
     }
 
-    &-phone,
-    &-email {
+    &-item {
       display: flex;
       color: #000;
       font-size: 15px;
-      font-weight: 400;
+      font-weight: 700;
       line-height: 29.02px;
+      padding-bottom: 44px;
+      padding-right: 33px;
+
+      @media(max-width: 1450px) {
+        padding-bottom: 0;
+      }
     }
+
   }
 
 
   &__menu {
     display: flex;
     width: 1200px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 
     @media(max-width: 1200px) {
       width: auto;
+      padding-bottom: 0;
     }
   }
 

@@ -1,6 +1,6 @@
 .main-header {
   //max-width: 1836px;
-  padding-bottom: 37px;
+  padding-bottom: 32px;
   border-bottom: 1px solid rgba($white, 0.1);
 
   &_sticky {
@@ -9,7 +9,7 @@
   }
 
   &__container {
-    padding-top: 24px;
+    padding-top: 19px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,6 +21,8 @@
     max-width: 275px;
     width: 100%;
     flex-shrink: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-right: 20px;
 
     @media(max-width: 1200px) {
