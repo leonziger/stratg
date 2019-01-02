@@ -4,8 +4,9 @@ section.contact-us
     p.contact-us__subtitle StraTG specializes in organizational consulting, professional workshops, training, business strategy, marketing and communications.
     form.contact-us__form
       .contact-us__fields
-        input.contact-us__field(name='name' placeholder='Your Name' autocomplete='off' minlength='4' required)
-        input.contact-us__field(name='phone' placeholder='Your Phone' autocomplete='off' minlength='4' required)
-        input.contact-us__field(name='company' placeholder='Company' autocomplete='off' minlength='4' required)
-        textarea.contact-us__area(name='message' placeholder='Your Message' autocomplete='off' minlength='20' required)
-      button.button.contact-us__submit Send
+        input.contact-us__field(name='name' placeholder='Your Name' autocomplete='off')
+        input.contact-us__field(name='phone' type='tel' placeholder='Your Phone' autocomplete='off' required)
+        input.contact-us__field(name='company' placeholder='Company' autocomplete='off'  required)
+        textarea.contact-us__area(name='message' placeholder='Your Message' autocomplete='off' required)
+      .before-submit
+      input.button.contact-us__submit(type='submit' value='Send')

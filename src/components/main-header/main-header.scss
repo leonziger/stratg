@@ -1,5 +1,4 @@
 .main-header {
-  //max-width: 1836px;
   padding-bottom: 32px;
   border-bottom: 1px solid rgba($white, 0.1);
 
@@ -109,12 +108,13 @@
     }
   }
 
-  &__contact-group {
+  &__contacts {
     display: flex;
     align-items: center;
-    margin-top: 12px;
+    margin-top: 11px;
     flex-shrink: 0;
     padding-left: 15px;
+
 
     @media(max-width: 992px) {
       padding-left: 0;
@@ -132,6 +132,19 @@
       @media(max-width: 1200px) {
         display: none;
       }
+    }
+
+    &-button {
+      display: flex;
+      padding: 0 18px 0 14px;
+      font-weight: 400;
+      font-size: 16px;
+    }
+
+    &-icon {
+      display: flex;
+      align-self: center;
+      padding-right: 2px;
     }
   }
 
