@@ -1,5 +1,4 @@
 const gulp = require('gulp');
-const csslint = require('gulp-csslint');
 const buffer = require('vinyl-buffer');
 const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
@@ -101,7 +100,7 @@ gulp.task('svgSymbols', function () {
     .pipe(svgmin())
     .pipe(svgSymbols({
       templates: ['default-svg'],
-      className: '.icon_%f'
+      class: '.icon_%f'
     }))
     .pipe(gulp.dest('./public'));
 });

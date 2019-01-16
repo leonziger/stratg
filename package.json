@@ -1,7 +1,8 @@
 {
-  "name": "stratg",
+  "name": "strat-g",
   "version": "0.1.0",
   "author": "Leonid Zichkov",
+  "private": true,
   "homepage": "https://github.com/leonziger/stratg#readme",
   "repository": {
     "type": "git",
@@ -12,7 +13,8 @@
   },
   "scripts": {
     "start": "gulp",
-    "build": "cross-env NODE_ENV=production gulp build"
+    "build": "cross-env NODE_ENV=production gulp build",
+    "deploy": "gh-pages -d ./public"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.3",
@@ -23,7 +25,8 @@
     "browser-sync": "^2.18.13",
     "cross-env": "^5.1.4",
     "del": "^2.2.2",
-    "gulp": "github:gulpjs/gulp#4.0",
+    "gh-pages": "^2.0.1",
+    "gulp": "^4.0.0",
     "gulp-bro": "^1.0.3",
     "gulp-csslint": "^1.0.1",
     "gulp-csso": "^3.0.0",
@@ -43,13 +46,7 @@
     "vinyl-buffer": "^1.0.0"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0",
-    "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
-    "jquery-mask-plugin": "^1.14.15",
-    "jquery-validation": "^1.17.0",
-    "jquery.maskedinput": "^1.4.1",
-    "vanilla-text-mask": "^5.1.1",
-    "vex-js": "^4.1.0"
+    "vanilla-text-mask": "^5.1.1"
   }
 }
