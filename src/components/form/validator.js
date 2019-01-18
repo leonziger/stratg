@@ -3,14 +3,13 @@
   const text = form.querySelector('.before-submit');
   const yourName = form.querySelector('input[name="name"]');
   const companyName = form.querySelector('input[name="company"]');
-  console.log(form);
 
-  const checkTextField = /\S{4,})$/;
+  const checkTextField = /^(\D{4,})$/;
 
   form.addEventListener('submit', function(event) {
     let i, value, name, input,
       max = inputs.length,
-      formNonValid = 0,
+      formNonValid = 2,
       errors = 'Fill correct  symbols from A to Z:<ul>';
 
     let firstname = yourName.value;
@@ -34,6 +33,7 @@
     }
 
     errors += '</ul>';
+    console.log(formNonValid);
     if (formNonValid < 4) {
       event.preventDefault();
       text.innerHTML = errors;
@@ -42,7 +42,7 @@
       text.style.margin = '-10px auto 20px';
 
     } else {
-      alert('Dear ' + firstname + ' ' + secondname + '. Thanks for registration.')
+      alert('Dear ' + firstname + ' ' + secondname + '. Thanks for your message.')
     }
 
     console.log(errors);
